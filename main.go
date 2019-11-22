@@ -53,9 +53,9 @@ func test(client http.Client, v string) {
 
 	} else {
 
-		if resp.StatusCode == 200 && resp.Request.URL.String() == "http://rkn.gov.ru" {
-			fmt.Println("RKNOK ", v)
-		} else if resp.StatusCode == 200 && resp.Request.URL.String() != "http://rkn.gov.ru" {
+		if resp.StatusCode == 200 && resp.Request.URL.String() == "http://test.com" {
+			fmt.Println("OK ", v)
+		} else if resp.StatusCode == 200 && resp.Request.URL.String() != "http://test.com" {
 			fmt.Println(v, " ", resp.Request.URL)
 		} else {
 			fmt.Println(resp.Request.URL, " ", resp.StatusCode)
