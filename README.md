@@ -1,2 +1,2 @@
 # _test
-test sites  golang
+test RKN golang
